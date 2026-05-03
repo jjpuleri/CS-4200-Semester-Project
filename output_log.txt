@@ -1,0 +1,168 @@
+
+CS 4200 - Computer Architecture
+Jason Puleri
+Semester Project: Cache Replacement Policies Comparison
+
+========================================================
+Simulation: Sequential
+Cache Size: 8 blocks
+Trace size: 200 accesses
+========================================================
+
+Policy: LRU
+Total Accesses: 200
+Hits: 0
+Misses: 200
+Evictions: 192
+Hit Rate: 0.00%
+Miss Rate: 100.00%
+
+Policy: FIFO
+Total Accesses: 200
+Hits: 0
+Misses: 200
+Evictions: 192
+Hit Rate: 0.00%
+Miss Rate: 100.00%
+
+Policy: Random
+Total Accesses: 200
+Hits: 0
+Misses: 200
+Evictions: 192
+Hit Rate: 0.00%
+Miss Rate: 100.00%
+
+========================================================
+Simulation: Looping
+Cache Size: 8 blocks
+Trace size: 200 accesses
+========================================================
+
+Policy: LRU
+Total Accesses: 200
+Hits: 194
+Misses: 6
+Evictions: 0
+Hit Rate: 97.00%
+Miss Rate: 3.00%
+
+Policy: FIFO
+Total Accesses: 200
+Hits: 194
+Misses: 6
+Evictions: 0
+Hit Rate: 97.00%
+Miss Rate: 3.00%
+
+Policy: Random
+Total Accesses: 200
+Hits: 194
+Misses: 6
+Evictions: 0
+Hit Rate: 97.00%
+Miss Rate: 3.00%
+
+========================================================
+Simulation: Random
+Cache Size: 8 blocks
+Trace size: 200 accesses
+========================================================
+
+Policy: LRU
+Total Accesses: 200
+Hits: 54
+Misses: 146
+Evictions: 138
+Hit Rate: 27.00%
+Miss Rate: 73.00%
+
+Policy: FIFO
+Total Accesses: 200
+Hits: 52
+Misses: 148
+Evictions: 140
+Hit Rate: 26.00%
+Miss Rate: 74.00%
+
+Policy: Random
+Total Accesses: 200
+Hits: 54
+Misses: 146
+Evictions: 138
+Hit Rate: 27.00%
+Miss Rate: 73.00%
+
+========================================================
+Simulation: Mixed
+Cache Size: 8 blocks
+Trace size: 200 accesses
+========================================================
+
+Policy: LRU
+Total Accesses: 200
+Hits: 114
+Misses: 86
+Evictions: 78
+Hit Rate: 57.00%
+Miss Rate: 43.00%
+
+Policy: FIFO
+Total Accesses: 200
+Hits: 85
+Misses: 115
+Evictions: 107
+Hit Rate: 42.50%
+Miss Rate: 57.50%
+
+Policy: Random
+Total Accesses: 200
+Hits: 94
+Misses: 106
+Evictions: 98
+Hit Rate: 47.00%
+Miss Rate: 53.00%
+
+========================================================
+Simulation: Mixed (cache size = 4)
+Cache Size: 4 blocks
+Trace size: 200 accesses
+========================================================
+
+Policy: LRU
+Total Accesses: 200
+Hits: 18
+Misses: 182
+Evictions: 178
+Hit Rate: 9.00%
+Miss Rate: 91.00%
+
+Policy: FIFO
+Total Accesses: 200
+Hits: 15
+Misses: 185
+Evictions: 181
+Hit Rate: 7.50%
+Miss Rate: 92.50%
+
+Policy: Random
+Total Accesses: 200
+Hits: 34
+Misses: 166
+Evictions: 162
+Hit Rate: 17.00%
+Miss Rate: 83.00%
+
+========================================================
+Summary of Results
+========================================================
+ Simulation                   Policy  Hit Rate Miss Rate
+--------------------------------------------------------
+ Sequential                      0.0%    0.0%    0.0%
+ Looping                        97.0%   97.0%   97.0%
+ Random                         27.0%   26.0%   27.0%
+ Mixed                          57.0%   42.5%   47.0%
+ Mixed (cache size = 4)          9.0%    7.5%   17.0%
+========================================================
+
+End of Simulation
